@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 500px;
+            width: 800px;
+            border: 2px solid black;
+            margin-left: 200px;
+            
+
+        }
+        .main > h1 {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .flower{
+            display: flex;
+            margin-top: 50px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 50px;
+        }
+        .sub-1{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-image: url(../beautiful-blooming-flowers-spring-season_23-2150790288.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .sub-2{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-image: url(../beautiful-blooming-flowers-spring-season_23-2150790288.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+        }
+        .sub-3{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-image: url(../beautiful-blooming-flowers-spring-season_23-2150790288.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        button{
+            background-color: white;
+            font-size: 25px;
+            margin-top: 40px;
+            margin-left: 650px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>jQuery fadeOut</h1>
+        <div class="flower">
+        <div class="sub-1"></div>
+        <div class="sub-2"></div>
+        <div class="sub-3"></div>
+        </div>
+        <button onclick="">show</button>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+
+    
+   
+    $(document).ready(function(){
+  $("button").click(function(){
+    $(".sub-1").fadeTo("slow", 1);
+    $(".sub-2").fadeTo("slow", 0.5);
+    $(".sub-3").fadeTo("slow", 0.2);
+  });
+});
+
+   
+</script>
+</html>
